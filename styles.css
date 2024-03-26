@@ -1,0 +1,229 @@
+body{
+    background-color: black;
+    background-image: url("./img/plano de fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+}
+
+.quadradoPreto{
+    background-color: black;
+    height: 90vh;
+    width: 90vw;
+}
+
+.it{
+    position: absolute;
+    opacity: 0%;
+    top: 2vh;
+    right: 50vw;
+}
+
+.tituloImg{
+    height: 65vh;
+}
+
+.stephen{
+    position: absolute;
+    opacity: 0%;
+    top: 35vh;
+    right: 62vw;
+}
+
+.stephenImg{
+    height: 40vh;
+}
+
+.king{
+    position: absolute;
+    opacity: 0%;
+    top: 44vh;
+    right: 62vw;
+}
+
+.kingImg{
+    height: 40vh;
+}
+
+.paperBoat{
+    position: absolute;
+    top: 92vh;
+    right: 200vw;
+}
+
+.barcoImg{
+    height: 10vh;
+}
+
+.streaming {
+    position: absolute;
+    opacity: 0%;
+    top: 10vh;
+    right: 5vw;
+}
+
+.streamingImg{
+    height: 30vh;
+}
+
+.balaoClique{
+    position: absolute;
+    top: 35vh;
+    right: 4vw;
+}
+
+.balaoPennywise{
+    height: 30vh;
+}
+
+.cliqueAqui{
+    position: absolute;
+    opacity: 0%;
+    top: 58vh;
+    right: 9vw;
+}
+
+.avisoCliqueAqui{
+    height: 20vh;
+}
+
+.animationLeftToRight{
+    animation: leftToRight 15s forwards;
+}
+
+.animationSumir{
+    animation: sumir 10s forwards;
+}
+
+.animationAparecer{
+    animation: aparecer 5s forwards;
+    animation-delay: 3s;
+}
+
+.animationAparecerDelay{
+    animation: aparecer 5s forwards;
+    animation-delay: 7s;
+}
+
+.animationPiscar{
+    animation: piscar 5s infinite ease-in;
+    animation-delay: 3s;
+}
+
+.animationBottomTop{
+    animation: bottomTotop 10s forwards ease;
+}
+
+@keyframes sumir {
+    from{
+        opacity: 100%;
+    } to {
+        opacity: 0%;
+    }
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0%;
+    } to {
+        opacity: 100%;
+    }
+}
+
+@keyframes leftToRight {
+    from{
+        left: 1vw;
+        opacity: 100%;
+
+    } to {
+        left: 90vw;
+        opacity: 0%;
+    }
+}
+
+@keyframes piscar {
+    5% {
+        filter: brightness(100%);
+    }
+    10% {
+        filter: brightness(300%);
+    }
+    12%{
+        filter: brightness(100%);
+    }
+    13%{
+        filter: brightness(300%);
+    }
+    15%{
+        filter: brightness(100%);
+    }
+}
+
+@keyframes bottomTotop {
+    from {
+        top: 100vh;
+    }
+
+    to {
+        top: 34vh;
+    }
+}
+@media screen and (max-width: 600px){
+    .it{
+        position: absolute;
+        opacity: 0%;
+        top: -5vh;
+        right: -15vw;
+    }
+    
+    .tituloImg{
+        height: 40vh;
+    }
+    
+    .stephen{
+        display: none;
+    }
+    
+    .king{
+        display: none;
+    }
+    
+    .streaming {
+        position: absolute;
+        opacity: 0%;
+        top: 20vh;
+        right: 16vw;
+    }
+    
+    .streamingImg{
+        height: 20vh;
+    }
+    
+    .balaoClique{
+        position: absolute;
+        top: 35vh;
+        right: -2vw;
+    }
+    
+    .cliqueAqui{
+        top: 60vh;
+        right: 15vw;
+    }
+
+    .animationBottomTop{
+        
+    }
+
+    @keyframes bottomTotop {
+        from {
+            top: 100vh;
+        }
+    
+        to {
+            top: 36vh;
+        }
+    }
+};
